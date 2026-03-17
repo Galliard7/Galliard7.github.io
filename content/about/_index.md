@@ -11,9 +11,11 @@ I'm building agentic workflows to accelerate how data science gets done. Beyond 
 
 ## Technical Stack
 
-**Languages & Data:** Python, MySQL, BigQuery
+**Languages:** Python
 
-**ML & Deep Learning:** PyTorch, Hugging Face Transformers, XGBoost, LightGBM
+**Databases & Warehousing:** MySQL, BigQuery, Neo4j
+
+**ML & Deep Learning:** PyTorch, TensorFlow, Hugging Face Transformers, XGBoost, LightGBM
 
 **BI & Visualization:** Tableau, Looker
 
