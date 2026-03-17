@@ -11,15 +11,15 @@ I'm building agentic workflows to accelerate how data science gets done. Beyond 
 
 ## Technical Stack
 
-**ML/DL:** PyTorch, Hugging Face Transformers, scikit-learn, XGBoost, LightGBM, CatBoost
+**Languages & Data:** Python, MySQL, BigQuery
 
-**Deep Learning:** DeBERTa, EfficientNet, Swin Transformers, ArcFace metric learning, GRU-UNet, ONNX optimization
+**ML & Deep Learning:** PyTorch, Hugging Face Transformers, XGBoost, LightGBM
 
-**Data:** pandas, Polars, NumPy, SQL, feature engineering at scale
+**BI & Visualization:** Tableau, Looker
 
-**Infrastructure:** Python, Docker, GitHub Actions, CI/CD, Hugo
+**Infrastructure:** Docker, GitHub Actions, CI/CD, Hugo
 
-**AI Tooling:** Claude Code, Codex, Gemini CLI, OpenClaw
+**AI Tooling:** Claude Code, Codex, GitHub Copilot, Gemini CLI, OpenClaw
 
 ## Links
 
