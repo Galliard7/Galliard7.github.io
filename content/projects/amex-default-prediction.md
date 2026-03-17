@@ -16,6 +16,10 @@ Predicting credit card default probability for American Express customers using 
 - Aggregation features: rolling statistics, lag features, trend indicators
 - Careful handling of missing values and categorical encodings
 
+## Result
+
+287/4874 🥉
+
 ## Links
 
 - [GitHub Repository](https://github.com/Galliard7/amex-default-prediction)

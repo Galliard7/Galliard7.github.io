@@ -1,10 +1,10 @@
 ---
 title: "Galliard7"
-description: "Data Scientist and ML Engineer"
+description: "Director of Data Science"
 ---
 
-I'm a data scientist and ML engineer focused on applied machine learning, competition modeling, and building developer tools.
+Director of Data Science at a fintech company, where I lead a talented team solving problems across underwriting, credit risk, acquisition, marketing, and fraud detection.
 
-I compete on [Kaggle](https://www.kaggle.com/illidan7) and build open-source tools for productivity and automation. My work spans NLP, time series, computer vision, and financial modeling.
+I'm building agentic workflows with Claude Code, Codex, Gemini CLI, and OpenClaw to accelerate how data science gets done. I compete on [Kaggle](https://www.kaggle.com/illidan7) across deep learning, LLMs, computer vision, and time series — learning from and competing against some of the best data scientists in the world.
 
 Browse my [projects](/projects/) or read more [about me](/about/).

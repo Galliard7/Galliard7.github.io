@@ -16,7 +16,9 @@ Detecting personally identifiable information (PII) in student essays using name
 - **ONNX optimization** for inference speed without sacrificing accuracy
 - **Ensemble strategy** combining multiple model checkpoints
 
-## Results
+## Result
+
+121/2048 🥉
 
 - **Public leaderboard:** 0.970
 - **Private leaderboard:** 0.956

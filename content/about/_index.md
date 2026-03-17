@@ -5,27 +5,21 @@ description: "Background, skills, and contact"
 
 ## Background
 
-I'm a data scientist and ML engineer with experience across NLP, time series forecasting, computer vision, and financial modeling. I build production ML systems and compete on Kaggle to sharpen my skills against real-world problems.
+Director of Data Science at a fintech company, where I lead a talented team solving problems across underwriting, credit risk, acquisition, marketing, and fraud detection.
 
-Beyond competition work, I build developer tools — automation systems, task management, and content pipelines — designed to reduce friction in technical workflows.
+I'm building agentic workflows with Claude Code, Codex, Gemini CLI, and OpenClaw to accelerate how data science gets done. Beyond my day job, I compete on [Kaggle](https://www.kaggle.com/illidan7) across deep learning, LLMs, computer vision, and time series, and build open-source tooling for productivity and automation.
 
 ## Technical Stack
 
 **ML/DL:** PyTorch, Hugging Face Transformers, scikit-learn, XGBoost, LightGBM, CatBoost
 
-**NLP:** DeBERTa, NER pipelines, ONNX optimization, synthetic data generation
+**Deep Learning:** DeBERTa, EfficientNet, Swin Transformers, ArcFace metric learning, GRU-UNet, ONNX optimization
 
 **Data:** pandas, Polars, NumPy, SQL, feature engineering at scale
 
 **Infrastructure:** Python, Docker, GitHub Actions, CI/CD, Hugo
 
-**Tools:** Kaggle Notebooks, Jupyter, VS Code, Claude Code
-
-## Kaggle
-
-Profile: [kaggle.com/illidan7](https://www.kaggle.com/illidan7)
-
-Competitions span PII detection, credit default prediction, market prediction, volatility forecasting, sleep state detection, and product matching.
+**AI Tooling:** Claude Code, Codex, Gemini CLI, OpenClaw
 
 ## Links
 
