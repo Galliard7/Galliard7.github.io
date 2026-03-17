@@ -1,8 +1,29 @@
 baseURL = "https://galliard7.github.io/"
-
 languageCode = "en-us"
-
-title = "My Blog"
-
+title = "Galliard7"
 theme = "ananke"
 
+[params]
+  author = "Galliard7"
+  description = "Data Scientist and ML Engineer. Kaggle competitor, tool builder."
+  site_logo = ""
+  background_color_class = "bg-dark-gray"
+  recent_posts_number = 10
+
+[params.ananke]
+  show_summary = true
+
+[[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 1
+
+[[menu.main]]
+  name = "Projects"
+  url = "/projects/"
+  weight = 2
+
+[[menu.main]]
+  name = "About"
+  url = "/about/"
+  weight = 3
