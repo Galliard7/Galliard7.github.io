@@ -19,7 +19,7 @@ I'm building agentic workflows to accelerate how data science gets done. Beyond 
 
 **BI & Visualization:** Tableau, Looker
 
-**Infrastructure:** Docker, GitHub Actions, CI/CD, Hugo
+**Infrastructure:** Docker, GitHub Actions
 
 **AI Tooling:** Claude Code, Codex, GitHub Copilot, Gemini CLI, OpenClaw
 
