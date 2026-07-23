@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shyam Prabhakar — Director of Data Science</title>
+<meta name="description" content="Shyam Prabhakar — Director of Data Science. 9+ years building production ML & AI decision systems in consumer lending / fintech.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#faf9f6;
+    --paper-2:#f5f3ee;
+    --ink:#1a1a1a;
+    --ink-soft:#4a4844;
+    --ink-faint:#8a877f;
+    --accent:#1a5276;
+    --accent-soft:#1a527612;
+    --rule:#e2ded4;
+    --rule-strong:#cfcabd;
+    --card:#fffdf9;
+    --serif:"IBM Plex Serif",Georgia,serif;
+    --sans:"IBM Plex Sans","Helvetica Neue",Arial,sans-serif;
+    --mono:"IBM Plex Mono",ui-monospace,monospace;
+    --maxw:1180px;
+    --ease:cubic-bezier(.22,.61,.36,1);
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:var(--sans);
+    font-weight:400;
+    font-size:17px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+  }
+  a{color:var(--accent);text-decoration:none;}
+  a:hover{text-decoration:underline;text-underline-offset:3px;}
+  ::selection{background:var(--accent);color:var(--paper);}
+
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 40px;}
+  .rule{height:1px;background:var(--rule);border:0;margin:0;}
+
+  .eyebrow{
+    font-family:var(--mono);
+    font-size:12px;
+    letter-spacing:.22em;
+    text-transform:uppercase;
+    color:var(--accent);
+    font-weight:500;
+  }
+  .section-label{
+    display:flex;align-items:baseline;gap:16px;
+    font-family:var(--mono);
+    font-size:12px;letter-spacing:.22em;text-transform:uppercase;
+    color:var(--ink-faint);
+    margin-bottom:38px;
+  }
+  .section-label .num{color:var(--accent);}
+  .section-label::after{content:"";flex:1;height:1px;background:var(--rule);}
+
+  /* ---- Top bar ---- */
+  .topbar{
+    position:sticky;top:0;z-index:50;
+    background:rgba(250,249,246,.82);
+    backdrop-filter:saturate(140%) blur(10px);
+    border-bottom:1px solid var(--rule);
+  }
+  .topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:62px;}
+  .brand{font-family:var(--serif);font-weight:600;font-size:19px;letter-spacing:-.01em;}
+  .brand span{color:var(--accent);}
+  .topnav{display:flex;gap:30px;font-size:14px;}
+  .topnav a{color:var(--ink-soft);letter-spacing:.02em;}
+  .topnav a:hover{color:var(--accent);text-decoration:none;}
+  @media(max-width:720px){.topnav{display:none;}}
+
+  /* ---- Hero ---- */
+  .hero{padding:96px 0 74px;}
+  .hero .eyebrow{margin-bottom:26px;}
+  .hero h1{
+    font-family:var(--serif);
+    font-weight:500;
+    font-size:clamp(44px,7.4vw,92px);
+    line-height:.98;
+    letter-spacing:-.025em;
+    margin:0 0 6px;
+  }
+  .hero .title{
+    font-family:var(--serif);
+    font-style:italic;
+    font-weight:400;
+    font-size:clamp(22px,3vw,34px);
+    color:var(--accent);
+    letter-spacing:-.01em;
+    margin:0 0 30px;
+  }
+  .hero .positioning{
+    max-width:640px;
+    font-size:clamp(18px,2vw,21px);
+    line-height:1.5;
+    color:var(--ink-soft);
+    font-weight:300;
+    margin:0 0 40px;
+  }
+  .hero .positioning strong{color:var(--ink);font-weight:500;}
+  .herolinks{display:flex;flex-wrap:wrap;gap:10px;}
+  .herolinks a{
+    display:inline-flex;align-items:center;gap:8px;
+    border:1px solid var(--rule-strong);
+    border-radius:2px;
+    padding:9px 16px;
+    font-size:14px;
+    color:var(--ink);
+    letter-spacing:.01em;
+    transition:border-color .25s var(--ease),color .25s var(--ease),background .25s var(--ease);
+  }
+  .herolinks a:hover{border-color:var(--accent);color:var(--accent);background:var(--accent-soft);text-decoration:none;}
+  .herolinks a .dot{width:5px;height:5px;border-radius:50%;background:var(--accent);opacity:.6;}
+
+  section{padding:82px 0;}
+  #work{padding-top:86px;}
+
+  /* ---- Work head + count ---- */
+  .work-head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:26px;}
+  .work-head h2{
+    font-family:var(--serif);font-weight:500;
+    font-size:clamp(30px,4.4vw,48px);letter-spacing:-.02em;line-height:1.02;margin:0;
+  }
+  .work-head p{max-width:460px;color:var(--ink-soft);font-weight:300;margin:10px 0 0;font-size:16px;}
+  .count{
+    font-family:var(--mono);font-size:13px;color:var(--ink-faint);letter-spacing:.06em;white-space:nowrap;
+  }
+  .count b{color:var(--accent);font-weight:500;}
+
+  /* ---- Filter chips ---- */
+  .chips{
+    display:flex;flex-wrap:wrap;gap:9px;
+    padding:26px 0 4px;
+    margin-bottom:8px;
+  }
+  .chip{
+    font-family:var(--sans);
+    font-size:13.5px;
+    font-weight:400;
+    letter-spacing:.01em;
+    color:var(--ink-soft);
+    background:transparent;
+    border:1px solid var(--rule-strong);
+    border-radius:100px;
+    padding:7px 15px;
+    cursor:pointer;
+    transition:all .2s var(--ease);
+    white-space:nowrap;
+    display:inline-flex;align-items:center;gap:8px;
+  }
+  .chip .cnt{
+    font-family:var(--mono);font-size:10.5px;color:var(--ink-faint);
+    line-height:1;padding-top:1px;
+  }
+  .chip:hover{border-color:var(--accent);color:var(--accent);}
+  .chip:focus-visible{outline:2px solid var(--accent);outline-offset:2px;}
+  .chip[aria-pressed="true"]{
+    background:var(--accent);border-color:var(--accent);color:var(--paper);
+  }
+  .chip[aria-pressed="true"] .cnt{color:rgba(255,255,255,.7);}
+  .chip.all{font-weight:500;letter-spacing:.03em;}
+  .chip.all[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);}
+
+  .filterbar{
+    display:flex;align-items:center;gap:18px;flex-wrap:wrap;
+    padding-top:4px;padding-bottom:2px;
+    font-size:13px;color:var(--ink-faint);
+  }
+  .clearbtn{
+    background:transparent;border:0;color:var(--accent);cursor:pointer;
+    font-family:var(--sans);font-size:13px;padding:0;text-decoration:underline;text-underline-offset:3px;
+  }
+  .clearbtn[hidden]{display:none;}
+
+  /* ---- Group headings ---- */
+  .group{margin-top:52px;}
+  .group:first-of-type{margin-top:40px;}
+  .group-head{
+    display:flex;align-items:baseline;gap:14px;margin-bottom:20px;flex-wrap:wrap;
+  }
+  .group-head h3{
+    font-family:var(--serif);font-weight:500;font-size:22px;letter-spacing:-.01em;margin:0;
+  }
+  .group-head .sub{font-family:var(--mono);font-size:11px;letter-spacing:.11em;text-transform:uppercase;color:var(--ink-faint);}
+  .group.empty{display:none;}
+
+  /* ---- Tables ---- */
+  .tablewrap{border:1px solid var(--rule);background:var(--card);overflow-x:auto;}
+  table.work{
+    width:100%;border-collapse:collapse;font-size:15px;
+    min-width:640px;
+  }
+  table.work thead th{
+    font-family:var(--mono);font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;
+    color:var(--ink-faint);font-weight:500;text-align:left;
+    padding:13px 20px;border-bottom:1px solid var(--rule-strong);
+    background:var(--paper-2);white-space:nowrap;
+  }
+  table.work tbody td{
+    padding:15px 20px;border-bottom:1px solid var(--rule);vertical-align:top;
+    color:var(--ink-soft);font-weight:300;line-height:1.5;
+  }
+  table.work tbody tr:last-child td{border-bottom:0;}
+  table.work tbody tr{transition:background .2s var(--ease);}
+  table.work tbody tr:hover{background:var(--accent-soft);}
+  table.work tbody tr.hide{display:none;}
+
+  .cell-name{white-space:normal;}
+  .cell-name a{
+    font-family:var(--serif);font-weight:600;font-size:16px;color:var(--ink);letter-spacing:-.01em;
+    line-height:1.25;display:inline-block;
+  }
+  .cell-name a:hover{color:var(--accent);text-decoration:none;}
+  .cell-name .noname{font-family:var(--serif);font-weight:600;font-size:16px;color:var(--ink);}
+
+  .cell-focus{max-width:520px;}
+
+  .cell-result{
+    font-family:var(--mono);font-size:12.5px;color:var(--ink-soft);letter-spacing:.02em;
+    white-space:nowrap;
+  }
+  .cell-result .medal{font-size:14px;}
+  .cell-result .rank{color:var(--ink-faint);}
+
+  .cell-links{white-space:nowrap;}
+  .cell-links a{
+    font-size:13px;display:inline-flex;align-items:center;gap:6px;color:var(--ink);
+    margin-right:16px;
+  }
+  .cell-links a:last-child{margin-right:0;}
+  .cell-links a:hover{color:var(--accent);text-decoration:none;}
+  .cell-links a svg{width:13px;height:13px;stroke:currentColor;fill:none;stroke-width:1.6;opacity:.75;}
+
+  .table-empty{
+    display:none;padding:26px 20px;text-align:center;
+    font-family:var(--serif);font-style:italic;font-size:16px;color:var(--ink-faint);
+    border-bottom:0;
+  }
+  .table-empty.show{display:table-row;}
+  .table-empty.show td{border-bottom:0;color:var(--ink-faint);}
+
+  .noresults{
+    display:none;text-align:center;padding:60px 20px;color:var(--ink-faint);
+    font-family:var(--serif);font-style:italic;font-size:20px;
+  }
+  .noresults.show{display:block;}
+
+  /* ---- About ---- */
+  .about{background:var(--paper-2);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);}
+  .about-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:64px;align-items:start;}
+  @media(max-width:820px){.about-grid{grid-template-columns:1fr;gap:44px;}}
+  .about h2{font-family:var(--serif);font-weight:500;font-size:clamp(28px,4vw,42px);letter-spacing:-.02em;margin:0 0 26px;line-height:1.05;}
+  .about .bio{color:var(--ink-soft);font-weight:300;font-size:17px;line-height:1.68;}
+  .about .bio p{margin:0 0 18px;}
+  .about .bio strong{color:var(--ink);font-weight:500;}
+
+  .skills .skill-group{padding:20px 0;border-top:1px solid var(--rule-strong);}
+  .skills .skill-group:first-child{padding-top:0;border-top:0;}
+  .skills .sg-title{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin-bottom:12px;}
+  .skills .sg-items{display:flex;flex-wrap:wrap;gap:8px;}
+  .skills .sg-items span{font-size:13.5px;color:var(--ink);border:1px solid var(--rule-strong);border-radius:2px;padding:5px 11px;background:var(--card);}
+
+  /* ---- Footer ---- */
+  footer{padding:64px 0 54px;}
+  .foot-grid{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap;}
+  footer .brand{font-size:24px;}
+  .foot-links{display:flex;flex-wrap:wrap;gap:22px;font-size:14px;}
+  .foot-links a{color:var(--ink-soft);}
+  .foot-links a:hover{color:var(--accent);text-decoration:none;}
+  .foot-note{width:100%;margin-top:34px;padding-top:22px;border-top:1px solid var(--rule);font-family:var(--mono);font-size:11px;letter-spacing:.08em;color:var(--ink-faint);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;}
+
+  @media(max-width:560px){.wrap{padding:0 24px;}.hero{padding:64px 0 50px;}section{padding:60px 0;}}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <div class="brand">Shyam <span>Prabhakar</span></div>
+    <nav class="topnav">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</div>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow">Portfolio — Data Science &amp; AI</div>
+    <h1>Shyam Prabhakar</h1>
+    <div class="title">Director of Data Science</div>
+    <p class="positioning">
+      <strong>9+ years</strong> in consumer lending &amp; fintech. I build and own the production ML &amp; decision
+      systems the business runs on, and I'm <strong>reinventing how the data science &amp; analytics function
+      operates with agentic AI</strong>.
+    </p>
+    <div class="herolinks">
+      <a href="https://github.com/Galliard7" target="_blank" rel="noopener"><span class="dot"></span>GitHub</a>
+      <a href="https://kaggle.com/illidan7" target="_blank" rel="noopener"><span class="dot"></span>Kaggle</a>
+      <a href="https://linkedin.com/in/shyam-prabhakar-aa87a7b8" target="_blank" rel="noopener"><span class="dot"></span>LinkedIn</a>
+    </div>
+  </div>
+</header>
+
+<!-- WORK -->
+<section id="work">
+  <div class="wrap">
+    <div class="section-label"><span class="num">01</span> Selected Work</div>
+
+    <div class="work-head">
+      <div>
+        <h2>Projects &amp; competitions</h2>
+        <p>Filter by capability. Chips combine as an <em>OR</em> match — pick any, or leave them off to see everything.</p>
+      </div>
+      <div class="count" aria-live="polite">Showing <b id="count">0</b> of <span id="total">0</span></div>
+    </div>
+
+    <div class="chips" id="chips" role="group" aria-label="Filter projects by capability"></div>
+
+    <div class="filterbar">
+      <button class="clearbtn" id="clear" hidden>Clear filters</button>
+    </div>
+
+    <!-- Kaggle competitions -->
+    <div class="group" data-group="kaggle">
+      <div class="group-head">
+        <h3>Kaggle competitions</h3>
+        <span class="sub">A hands-on learning journey across NLP, computer vision, time series &amp; tabular ML</span>
+      </div>
+      <div class="tablewrap">
+        <table class="work">
+          <thead>
+            <tr><th scope="col">Competition</th><th scope="col">Focus &amp; approach</th></tr>
+          </thead>
+          <tbody data-table="kaggle">
+            <tr data-tags="NLP, LLM / GenAI, Deep Learning">
+              <td class="cell-name"><a href="https://github.com/Galliard7/pii-data-detection" target="_blank" rel="noopener">PII Data Detection</a></td>
+              <td class="cell-focus">PII detection in student essays — DeBERTa NER, synthetic data, ONNX ensemble</td>
+            </tr>
+            <tr data-tags="">
+              <td class="cell-name"><a href="https://github.com/Galliard7/google-football-2020" target="_blank" rel="noopener">Google Research Football</a></td>
+              <td class="cell-focus">Rule-based game-playing agent for 11v11 simulated football</td>
+            </tr>
+            <tr data-tags="Time Series, Deep Learning">
+              <td class="cell-name"><a href="https://github.com/Galliard7/ventilator-pressure-prediction" target="_blank" rel="noopener">Ventilator Pressure Prediction</a></td>
+              <td class="cell-focus">Airway-pressure sequence modeling — BiLSTM ensemble</td>
+            </tr>
+            <tr data-tags="LLM / GenAI, NLP, Deep Learning">
+              <td class="cell-name"><a href="https://github.com/Galliard7/llm-science-exam" target="_blank" rel="noopener">LLM Science Exam</a></td>
+              <td class="cell-focus">Retrieval-augmented multi-model inference (DeBERTa-v3, LongFormer)</td>
+            </tr>
+            <tr data-tags="Tabular / GBDT, Quant / Finance">
+              <td class="cell-name"><a href="https://github.com/Galliard7/amex-default-prediction" target="_blank" rel="noopener">Amex Default Prediction</a></td>
+              <td class="cell-focus">Credit-default prediction — 1500+ feature stacking ensemble</td>
+            </tr>
+            <tr data-tags="Computer Vision, Deep Learning">
+              <td class="cell-name"><a href="https://github.com/Galliard7/siim-covid19-detection" target="_blank" rel="noopener">SIIM COVID-19 Detection</a></td>
+              <td class="cell-focus">Chest-imaging classification + opacity detection</td>
+            </tr>
+            <tr data-tags="Time Series, Quant / Finance, Tabular / GBDT">
+              <td class="cell-name"><a href="https://github.com/Galliard7/optiver-realized-volatility" target="_blank" rel="noopener">Optiver Realized Volatility</a></td>
+              <td class="cell-focus">High-frequency volatility from order-book data (LGBM)</td>
+            </tr>
+            <tr data-tags="Computer Vision, NLP, Deep Learning">
+              <td class="cell-name"><a href="https://github.com/Galliard7/shopee-price-match" target="_blank" rel="noopener">Shopee Price Match</a></td>
+              <td class="cell-focus">Multimodal product matching — image + text embeddings</td>
+            </tr>
+            <tr data-tags="Time Series, Quant / Finance, Tabular / GBDT">
+              <td class="cell-name"><a href="https://github.com/Galliard7/jane-street-market-prediction" target="_blank" rel="noopener">Jane Street Market Prediction</a></td>
+              <td class="cell-focus">Real-time trading-signal modeling — GBDT ensemble</td>
+            </tr>
+            <tr data-tags="Tabular / GBDT">
+              <td class="cell-name"><a href="https://github.com/Galliard7/santa-2020" target="_blank" rel="noopener">Santa 2020</a></td>
+              <td class="cell-focus">Multi-armed-bandit agent — decision-tree / XGBoost payout models</td>
+            </tr>
+            <tr data-tags="Time Series, Deep Learning">
+              <td class="cell-name"><a href="https://github.com/Galliard7/child-mind-sleep-states" target="_blank" rel="noopener">Child Mind — Sleep States</a></td>
+              <td class="cell-focus">Sleep-state detection from accelerometer time series (GRU-UNet)</td>
+            </tr>
+            <tr class="table-empty"><td colspan="2">No matching competitions — try removing a chip.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Agentic-coding builds -->
+    <div class="group" data-group="flagship">
+      <div class="group-head">
+        <h3>Built with agentic coding</h3>
+        <span class="sub">Building LLM applications with modern agentic coding tools</span>
+      </div>
+      <div class="tablewrap">
+        <table class="work">
+          <thead>
+            <tr><th scope="col">Project</th><th scope="col">What it is</th><th scope="col">Links</th></tr>
+          </thead>
+          <tbody data-table="flagship">
+            <tr data-tags="Agentic AI, LLM / GenAI, Computer Vision, Deep Learning, Full-Stack">
+              <td class="cell-name"><span class="noname">OpenMath</span></td>
+              <td class="cell-focus">Offline, multilingual AI math tutor — Gemma 4 + Ollama, function-calling agent, worksheet-photo vision</td>
+              <td class="cell-links">
+                <a href="https://github.com/Galliard7/OpenMath" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>GitHub</a>
+                <a href="https://www.kaggle.com/competitions/gemma-4-good-hackathon" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Kaggle — Gemma 4 Good</a>
+              </td>
+            </tr>
+            <tr data-tags="LLM / GenAI, Full-Stack">
+              <td class="cell-name"><span class="noname">FreetCode</span></td>
+              <td class="cell-focus">Free, browser-native coding practice (Python + SQL) with an on-device AI tutor · live at freetcode.com</td>
+              <td class="cell-links">
+                <a href="https://freetcode.com" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Live</a>
+                <a href="https://github.com/Galliard7/freetcode" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>GitHub</a>
+              </td>
+            </tr>
+            <tr class="table-empty"><td colspan="3">No matching projects — try removing a chip.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="noresults" id="noresults">No projects match this combination — try removing a chip.</div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="wrap">
+    <div class="section-label"><span class="num">02</span> About</div>
+    <div class="about-grid">
+      <div>
+        <h2>Leading models, decisions &amp; the shift to agentic AI.</h2>
+        <div class="bio">
+          <p>
+            <strong>Director of Data Science</strong> at a fintech company, with 9+ years in consumer lending.
+            I build and own the production ML and decision systems the business runs on — underwriting,
+            acquisition, and fraud — and I'm <strong>reinventing how the data science &amp; analytics function
+            operates with agentic AI</strong>: human-in-the-loop pipelines and a business knowledge base that
+            ground our tooling in how the company actually works.
+          </p>
+          <p>
+            I turn a business's data into <strong>durable, compounding assets</strong> that cut cost, unlock
+            scale, and build a lasting competitive edge. Independently, I build LLM-powered projects with modern
+            agentic coding tools and compete on Kaggle across deep learning, LLMs, computer vision, and time series.
+          </p>
+        </div>
+      </div>
+
+      <div class="skills">
+        <div class="skill-group">
+          <div class="sg-title">Languages</div>
+          <div class="sg-items"><span>Python</span><span>SQL</span><span>Cypher</span></div>
+        </div>
+        <div class="skill-group">
+          <div class="sg-title">Machine Learning</div>
+          <div class="sg-items"><span>Production ML systems &amp; monitoring</span><span>Supervised / Unsupervised ML</span><span>Graph analytics</span><span>Deep learning</span><span>Experimentation &amp; A/B testing</span></div>
+        </div>
+        <div class="skill-group">
+          <div class="sg-title">Platforms &amp; Data</div>
+          <div class="sg-items"><span>Google BigQuery</span><span>Neo4j</span><span>MySQL</span><span>Tableau</span><span>Looker</span></div>
+        </div>
+        <div class="skill-group">
+          <div class="sg-title">AI Development</div>
+          <div class="sg-items"><span>Agentic AI pipelines &amp; systems</span><span>Agentic coding tools (Cursor, Claude Code, Codex, Gemini CLI)</span><span>RAG &amp; knowledge bases</span><span>LLM applications</span><span>LLM fine-tuning &amp; evaluation</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="contact">
+  <div class="wrap">
+    <div class="section-label"><span class="num">03</span> Contact</div>
+    <div class="foot-grid">
+      <div class="brand">Shyam <span>Prabhakar</span></div>
+      <div class="foot-links">
+        <a href="https://github.com/Galliard7" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://kaggle.com/illidan7" target="_blank" rel="noopener">Kaggle</a>
+        <a href="https://linkedin.com/in/shyam-prabhakar-aa87a7b8" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+    <div class="foot-note">
+      <span>Director of Data Science</span>
+      <span>Built &amp; deployed on GitHub Pages</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  "use strict";
+
+  // ---- Taxonomy (order preserved) ----
+  var TAGS = [
+    "Agentic AI","LLM / GenAI","NLP","Computer Vision","Time Series","Deep Learning",
+    "Tabular / GBDT","Full-Stack","Quant / Finance"
+  ];
+
+  function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];});}
+
+  // ---- Collect data rows (exclude the per-table empty-state row) ----
+  var rows = Array.prototype.slice.call(
+    document.querySelectorAll('tbody[data-table] > tr[data-tags]')
+  );
+
+  // Parse each row's tags once (comma or space-pipe tolerant: split on comma).
+  var rowTags = rows.map(function(tr){
+    return tr.getAttribute("data-tags").split(",").map(function(t){ return t.trim(); }).filter(Boolean);
+  });
+
+  var TOTAL = rows.length;
+
+  // ---- Tag counts across all rows ----
+  var counts = {};
+  rowTags.forEach(function(tags){
+    tags.forEach(function(t){ counts[t] = (counts[t]||0) + 1; });
+  });
+
+  // ---- Render chips ----
+  var chipsEl = document.getElementById("chips");
+  var chipHTML = '<button class="chip all" data-tag="__all" aria-pressed="true">All'
+    + '<span class="cnt">'+TOTAL+'</span></button>';
+  chipHTML += TAGS.map(function(t){
+    var c = counts[t]||0;
+    return '<button class="chip" data-tag="'+esc(t)+'" aria-pressed="false">'
+      + esc(t)+'<span class="cnt">'+c+'</span></button>';
+  }).join("");
+  chipsEl.innerHTML = chipHTML;
+
+  // ---- State ----
+  var active = [];          // active tag filters (OR)
+  var countEl = document.getElementById("count");
+  var totalEl = document.getElementById("total");
+  var clearBtn = document.getElementById("clear");
+  var noResults = document.getElementById("noresults");
+  var groups = Array.prototype.slice.call(document.querySelectorAll(".group"));
+  totalEl.textContent = TOTAL;
+
+  function matches(tags){
+    if(active.length === 0) return true;
+    return active.some(function(t){ return tags.indexOf(t) !== -1; });
+  }
+
+  function apply(){
+    var visible = 0;
+
+    rows.forEach(function(tr, i){
+      var show = matches(rowTags[i]);
+      tr.classList.toggle("hide", !show);
+      if(show) visible++;
+    });
+
+    // Per-table empty state + hide empty group blocks entirely
+    groups.forEach(function(g){
+      var body = g.querySelector('tbody[data-table]');
+      var emptyRow = body ? body.querySelector('tr.table-empty') : null;
+      var anyVisible = body
+        ? body.querySelectorAll('tr[data-tags]:not(.hide)').length > 0
+        : false;
+      // Hide the whole group only when NO filter is active would still show rows;
+      // when filtering, keep the group but show its subtle empty-state row.
+      g.classList.toggle("empty", !anyVisible);
+      if(emptyRow) emptyRow.classList.toggle("show", !anyVisible);
+    });
+
+    countEl.textContent = visible;
+    noResults.classList.toggle("show", visible === 0);
+    clearBtn.hidden = active.length === 0;
+
+    var allChip = chipsEl.querySelector('[data-tag="__all"]');
+    allChip.setAttribute("aria-pressed", active.length === 0 ? "true" : "false");
+  }
+
+  function clearActive(){
+    active = [];
+    chipsEl.querySelectorAll('.chip[aria-pressed="true"]').forEach(function(c){
+      if(c.getAttribute("data-tag") !== "__all") c.setAttribute("aria-pressed","false");
+    });
+  }
+
+  // ---- Chip interaction (Enter/Space fire click natively on <button>) ----
+  chipsEl.addEventListener("click", function(e){
+    var btn = e.target.closest(".chip");
+    if(!btn) return;
+    var tag = btn.getAttribute("data-tag");
+
+    if(tag === "__all"){
+      clearActive();
+    } else {
+      var i = active.indexOf(tag);
+      if(i === -1){ active.push(tag); btn.setAttribute("aria-pressed","true"); }
+      else { active.splice(i,1); btn.setAttribute("aria-pressed","false"); }
+    }
+    apply();
+  });
+
+  clearBtn.addEventListener("click", function(){
+    clearActive();
+    apply();
+  });
+
+  apply();
+})();
+</script>
+</body>
+</html>
