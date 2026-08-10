@@ -122,6 +122,20 @@
   .herolinks a:hover{border-color:var(--accent);color:var(--accent);background:var(--accent-soft);text-decoration:none;}
   .herolinks a .dot{width:5px;height:5px;border-radius:50%;background:var(--accent);opacity:.6;}
 
+  .hero-grid{display:grid;grid-template-columns:minmax(0,1fr) 288px;gap:64px;align-items:center;}
+  .portrait img{
+    display:block;width:100%;height:auto;aspect-ratio:1;object-fit:cover;
+    border:1px solid var(--rule-strong);
+    border-radius:2px;
+    background:var(--paper-2);
+    box-shadow:16px 16px 0 var(--accent-soft);
+  }
+  @media(max-width:880px){
+    .hero-grid{grid-template-columns:1fr;gap:36px;}
+    .portrait{order:-1;width:128px;}
+    .portrait img{box-shadow:10px 10px 0 var(--accent-soft);}
+  }
+
   section{padding:82px 0;}
   #work{padding-top:86px;}
 
@@ -298,19 +312,26 @@
 <!-- HERO -->
 <header class="hero">
   <div class="wrap">
-    <div class="eyebrow">Portfolio — Data Science &amp; AI</div>
-    <h1>Shyam Prabhakar</h1>
-    <div class="title">Director of Data Science</div>
-    <p class="positioning">
-      <strong>9+ years</strong> in consumer lending &amp; fintech. I build and own the production ML &amp; decision
-      systems the business runs on, and I'm <strong>reimagining how the data science &amp; analytics function
-      operates with agentic AI</strong>.
-    </p>
-    <div class="herolinks">
-      <a href="https://github.com/Galliard7" target="_blank" rel="noopener"><span class="dot"></span>GitHub</a>
-      <a href="https://kaggle.com/illidan7" target="_blank" rel="noopener"><span class="dot"></span>Kaggle</a>
-      <a href="https://linkedin.com/in/shyam-prabhakar" target="_blank" rel="noopener"><span class="dot"></span>LinkedIn</a>
+   <div class="hero-grid">
+    <div>
+      <div class="eyebrow">Portfolio — Data Science &amp; AI</div>
+      <h1>Shyam Prabhakar</h1>
+      <div class="title">Director of Data Science</div>
+      <p class="positioning">
+        <strong>9+ years</strong> in consumer lending &amp; fintech. I build and own the production ML &amp; decision
+        systems the business runs on, and I'm <strong>reimagining how the data science &amp; analytics function
+        operates with agentic AI</strong>.
+      </p>
+      <div class="herolinks">
+        <a href="https://github.com/Galliard7" target="_blank" rel="noopener"><span class="dot"></span>GitHub</a>
+        <a href="https://kaggle.com/illidan7" target="_blank" rel="noopener"><span class="dot"></span>Kaggle</a>
+        <a href="https://linkedin.com/in/shyam-prabhakar" target="_blank" rel="noopener"><span class="dot"></span>LinkedIn</a>
+      </div>
     </div>
+    <div class="portrait">
+      <img src="profile-pic.jpg" width="1254" height="1254" alt="Shyam Prabhakar">
+    </div>
+   </div>
   </div>
 </header>
 
